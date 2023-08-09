@@ -1,0 +1,14 @@
+.portfolio img{
+    transition: .5s ease;
+}
+.portfolio:hover img{
+    transform: scale(1.1);
+}
+
+.portfolio .portfolio-layer{
+    transition: .5s ease;
+}
+.portfolio:hover .portfolio-layer{
+    opacity: 1;
+}
+

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icon -->
+    <script src="https://kit.fontawesome.com/80a4ad522e.js" crossorigin="anonymous"></script>
+
+    
+</head>
+<body class="bg-slate-800">
+    <Header>
+        <nav class="fixed w-full p-5 shadow-md md:flex md:items-center md:justify-between text-white z-10 bg-opacity-20 bg-black">
+            <div class="flex justify-between items-center ">
+              <span class="text-[#3076d3] text-4xl font-bold cursor-pointer">Code With Suhel</span>
+        
+              <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                <i  name="menu" onclick="Menu(this)" class="fa-solid fa-bars"></i>
+              </span>
+              
+            </div>
+        
+            <ul class="md:flex md:items-center md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+              <li class="mx-4 my-6 md:my-0 ">
+                <a href="#" class="text-md hover:text-[#3076d3] duration-500">Home</a>
+              </li>
+              <li class="mx-4 my-6 md:my-0 ">
+                <a href="#about" class="text-md hover:text-[#3076d3] duration-500">About</a>
+              </li>
+              <li class="mx-4 my-6 md:my-0">
+                <a href="#service" class="text-md hover:text-[#3076d3] duration-500">Services</a>
+              </li>
+              <li class="mx-4 my-6 md:my-0">
+                <a href="#portfolio" class="text-md hover:text-[#3076d3] duration-500">Portfolio</a>
+              </li>
+              <li class="mx-4 my-6 md:my-0">
+                <a href="#contact" class="text-md hover:text-[#3076d3] duration-500">Contact Me</a>
+              </li>
+            </ul>
+          </nav>
+        </Header>
+
+    <!-- Home Section -->
+    <section>
+        <div class="home-content flex p-16 justify-center lg:items-center flex-wrap-reverse">
+            <div class="lg:w-1/2 text-white">
+                <h3 class=" text-xl lg:text-2xl font-semibold">Hello, I am</h3>
+                <h2 class=" text-3xl lg:text-4xl font-bold mt-5 mb-5"><span class="text-[#3076d3]"> Md. Suhel Rana</span></h2>
+                <p>Web Design, Landing Pages and SPA That Helps Sell your Coaches, Solopreneurs & Real Estate Companies.</p>
+                <div class="text-2xl mb-5 mt-5 lg:mb-8 lg:mt-8">
+                    <a class="mr-4" href="https://www.facebook.com/codewithsuhel.CWS"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a class="mr-4" href="https://www.linkedin.com/in/codewithsuhel/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a class="mr-4" href="https://www.youtube.com/@codewithsuhel/videos"><i class="fa-brands fa-youtube"></i></a>
+                    <a class="mr-4" href=""><i class="fa-brands fa-square-reddit"></i></a>
+                </div>
+                    <a class="px-2 py-1 lg:px-4 lg:py-2 text-slate-900 bg-white font-semibold text-sm lg:text-xl mt-5" href="#">Download CV</a>
+            </div>
+            <div class="lg:w-1/2 mt-14">
+                <img class="mt-5 mb-8 lg:ml-16 btn" src="./image/cover4.png " alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+
+    <section id="about" class="about-content">
+        <div class="lg:flex text-white ml-12 mr-12 justify-center items-center mt-20 mb-20">
+            <div class="w-1/2 ">
+              <img class="about-img" src="./image/cover4.png" alt="">
+            </div>
+            <div class="w-1/2 ml-20 mt-16">
+              <h2 class="text-4xl font-bold text-white mb-8">About <span class="text-[#3076d3]">Me</span></h2>
+                <p class="font-bold text-xl about-info">Hi, I'm Here to Help Your Next Project!!!</p> <br>
+                <p class="text-xl about-info">I’ll help you with</p> <br>
+                 <p>▪️ Building a successful brand ( website is reactive & redesign, works on desktop, tablet, and mobile, no need for an app ) <br>
+                  ▪️ Attracting and converting funnel leads from the contact page into your targeted audiences.</p> <br>
+                <p class="text-xl about-info">Please send a dm.</p>
+
+                <div class="text-2xl mb-5 mt-5 lg:mb-8 lg:mt-8">
+                    <a class="mr-4" href="https://www.linkedin.com/in/codewithsuhel/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a class="mr-4" href="https://www.behance.net/codewithsuhel"><i class="fa-brands fa-square-behance"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Section -->
+
+    <section id="service" class="service-container">
+            <h2 class="text-4xl font-bold text-white text-center mt-5 mb-20">My <span class="text-[#3076d3]">Services</span></h2>
+           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-center items-center mx-auto ml-16 mr-20">
+
+            <div class="service-1 w-[300px] h-[380px] bg-slate-800 text-white p-7 text-center border-t-2 border-b-2 border-l-2 rounded border-white shadow-xl shadow-slate-900 hover:scale-105 duration-500">
+                <span class="text-7xl text-white hover:text-[#3076d3] text-center"><i class="fa-solid fa-laptop-code"></i></span>
+                <h2 class=" service-heading-1 text-2xl font-semibold pt-5 pb-5 hover:text-[#3076d3]">Web Designer</h2>
+                <p class="pb-7">The success of your Business
+                  "Perfect Design in Pixel and Passion" </p>
+                <button class="px-3 py-2 lg:px-5 lg:py-3 text-slate-800  bg-white font-semibold text-sm lg:text-[16px] mt-5 hover:bg-[#3076d3] hover:text-white">Read More</button>
+            </div>
+
+            <div class="service-2 w-[300px] h-[380px] bg-slate-800 text-white p-7 text-center border-t-2 border-b-2 rounded border-white shadow-xl shadow-slate-900 hover:scale-110 duration-500">
+                <span class="text-7xl text-white hover:text-[#3076d3] text-center"><i class="fa-regular fa-file-code"></i></span>
+                <h2 class="text-2xl font-semibold pt-5 pb-5 hover:text-[#3076d3]">Web Developer</h2>
+                <p class="pb-7">Building the Digital World with your business "Purpose, Success, and Empowering Brands"</p>
+                <button class="px-3 py-2 lg:px-5 lg:py-3 text-slate-800  bg-white font-semibold text-sm lg:text-[16px] mt-5 hover:bg-[#3076d3] hover:text-white">Read More</button>
+            </div>
+
+            <div class="service-3 w-[300px] h-[380px] bg-slate-800 text-white p-7 text-center border-t-2 border-b-2 border-r-2 rounded border-white shadow-xl shadow-slate-900 hover:scale-110 duration-500">
+                <span class="text-7xl text-white hover:text-[#3076d3] text-center"><i class="fa-solid fa-pen-nib"></i></span>
+                <h2 class="service-heading-3 text-2xl font-semibold pt-5 pb-5 hover:text-[#3076d3]">Graphic Designer</h2>
+                <p class="pb-7">Always creative love with Brand Identity design "Visualizing Dreams, Designing Realities"</p>
+                <button class="px-3 py-2 lg:px-5 lg:py-3 text-slate-800  bg-white font-semibold text-sm lg:text-[16px] mt-5 hover:bg-[#3076d3] hover:text-white">Read More</button>
+            </div>
+           </div>
+    </section>
+
+    <!-- Portfolio Section -->
+
+    <section id="portfolio" >
+        <h2 class="text-4xl font-bold text-white text-center mt-28 mb-20">Latest <span class="text-[#3076d3]">Projects</span></h2>
+
+        <div class="portfolio-item grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ml-10 mr-10">
+
+          <div class="portfolio portfolio-box-1 flex relative rounded-lg shadow-2xl overflow-hidden ">
+            <img class="w-full" src="./image/real-estate.jpg" alt="">
+            <div class="portfolio-layer absolute bottom-0 left-0 w-full h-full bg-gradient-to-b from-black/[.1] to-[#3076d3] text-white flex items-center flex-col text-center p-5 justify-center opacity-0">
+              <h2 class="text-3xl font-bold">Real Estate</h2>
+              <p class="text-xl mt-5 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum est.</p>
+              <a class="p-3 rounded-full bg-white items-center justify-center inline-flex text-slate-800 text-xl" href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+
+          <div class="portfolio portfolio-box-2 flex relative rounded-lg shadow-2xl overflow-hidden ">
+            <img class="w-full" src="./image/real-estate.jpg" alt="">
+            <div class="portfolio-layer absolute bottom-0 left-0 w-full h-full bg-gradient-to-b from-black/[.1] to-[#3076d3] text-white flex items-center flex-col text-center p-5 justify-center opacity-0">
+              <h2 class="text-3xl font-bold">Real Estate</h2>
+              <p class="text-xl mt-5 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum est.</p>
+              <a class="p-3 bg-white items-center justify-center inline-flex text-slate-800 text-xl rounded-full" href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+
+          <div class=" portfolio portfolio-box-3 flex relative rounded-lg shadow-2xl overflow-hidden ">
+            <img class="w-full" src="./image/real-estate.jpg" alt="">
+            <div class="portfolio-layer absolute bottom-0 left-0 w-full h-full bg-gradient-to-b from-black/[.1] to-[#3076d3] text-white flex items-center flex-col text-center p-5 justify-center opacity-0">
+              <h2 class="text-3xl font-bold">Real Estate</h2>
+              <p class="text-xl mt-5 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum est.</p>
+              <a class="p-3 bg-white items-center justify-center inline-flex text-slate-800 text-xl rounded-full" href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+
+          <div class="portfolio portfolio-box-4 flex relative rounded-lg shadow-2xl overflow-hidden ">
+            <img class="w-full" src="./image/oxlence.jpg" alt="">
+            <div class="portfolio-layer absolute bottom-0 left-0 w-full h-full bg-gradient-to-b from-black/[.1] to-[#3076d3] text-white flex items-center flex-col text-center p-5 justify-center opacity-0">
+              <h2 class="text-3xl font-bold">Oxlence Photographer Agency Logo</h2>
+              <br>
+              <a class="p-3 bg-white items-center justify-center inline-flex text-slate-800 text-xl rounded-full" href="https://www.behance.net/gallery/120659057/Oxlence-Photographer-Agency-Logo" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+
+          <div class=" portfolio portfolio-box-5 flex relative rounded-lg shadow-2xl overflow-hidden ">
+            <img class="w-full" src="./image/opex.jpg" alt="">
+            <div class="portfolio-layer absolute bottom-0 left-0 w-full h-full bg-gradient-to-b from-black/[.1] to-[#000] text-white flex items-center flex-col text-center p-5 justify-center opacity-0">
+              <h2 class="text-3xl font-bold">Opex Consulting Brand Identity Guidelines</h2>
+              <br>
+              <a class="p-3 bg-white items-center justify-center inline-flex text-slate-800 text-xl rounded-full" href="https://www.behance.net/gallery/120396865/Opex-Consulting-Brand-Identity-Guidelines" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+
+          <div class="portfolio portfolio-box-6 flex relative rounded-lg shadow-2xl overflow-hidden ">
+            <img class="w-full" src="./image/brand-identity.jpg" alt="">
+            <div class="portfolio-layer absolute bottom-0 left-0 w-full h-full bg-gradient-to-b from-black/[.1] to-[#3076d3] text-white flex items-center flex-col text-center p-5 justify-center opacity-0">
+              <h2 class="text-3xl font-bold">Planagro Agricultural Brand Identity</h2>
+              <br>
+              <a class="p-3 bg-white items-center justify-center inline-flex text-slate-800 text-xl rounded-full" href="https://www.behance.net/gallery/122791307/Planagro-agricultural-brand-identity" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div> 
+        </div>
+    </section>
+    <!-- Testimonial -->
+    <section>
+        <div class=" flex items-center flex-col w-full">
+          <h2 class="text-4xl font-bold text-white text-center mt-28 mb-20">Valuable <span class="text-[#3076d3]">Feedback</span></h2>
+
+          <div class="relative w-full pl-20 pb-20 pr-20">
+            <div class="testimonial-wrapper mySwiper p-3 rounded-lg overflow-hidden">
+              <div class="swiper-wrapper">
+
+                <div class="flex items-center flex-col bg-slate-800 rounded-lg shadow-2xl p-14 border-t-4 border-b-4 border-white swiper-slide">
+                  <img class="w-52 h-52 object-cover rounded-full border-[#3076d3] border-4 outline-4 outline-slate-800 " src="https://i.ibb.co/bs1PbZk/9.jpg" alt="">
+                  <h3 class="text-3xl font-bold mt-5 mb-5 text-white">John Doe</h3>
+                  <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias praesentium eum corrupti quas eveniet ex repudiandae mollitia rerum harum. Quisquam ea ipsa natus laudantium, laboriosam animi consequuntur. Animi, neque voluptatem optio voluptatibus tenetur qui, officiis blanditiis quibusdam ducimus impedit ipsa. Quis expedita veniam, quas asperiores sapiente modi corporis rem dolore eligendi repellendus. Provident mollitia suscipit quo? Delectus labore necessitatibus voluptate?</p>
+                </div>
+
+                <div class="flex items-center flex-col bg-slate-800 rounded-lg shadow-2xl p-14 border-t-4 border-b-4 border-white swiper-slide ">
+                  <img class="w-52 h-52 object-cover rounded-full border-[#3076d3] border-4 outline-4 outline-slate-800 " src="https://i.ibb.co/0n4yTR4/rr.png" alt="">
+                  <h3 class="text-3xl font-bold mt-5 mb-5 text-white">Kate Winslet</h3>
+                  <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias praesentium eum corrupti quas eveniet ex repudiandae mollitia rerum harum. Quisquam ea ipsa natus laudantium, laboriosam animi consequuntur. Animi, neque voluptatem optio voluptatibus tenetur qui, officiis blanditiis quibusdam ducimus impedit ipsa. Quis expedita veniam, quas asperiores sapiente modi corporis rem dolore eligendi repellendus. Provident mollitia suscipit quo? Delectus labore necessitatibus voluptate?</p>
+                </div>
+
+                <div class="flex items-center flex-col bg-slate-800 rounded-lg shadow-2xl p-14 border-t-4 border-b-4 border-white swiper-slide ">
+                  <img class="w-52 h-52 object-cover rounded-full border-[#3076d3] border-4 outline-4 outline-slate-800 " src="https://i.ibb.co/hVfPmx3/1.jpg" alt="">
+                  <h3 class="text-3xl font-bold mt-5 mb-5 text-white">John Smith</h3>
+                  <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias praesentium eum corrupti quas eveniet ex repudiandae mollitia rerum harum. Quisquam ea ipsa natus laudantium, laboriosam animi consequuntur. Animi, neque voluptatem optio voluptatibus tenetur qui, officiis blanditiis quibusdam ducimus impedit ipsa. Quis expedita veniam, quas asperiores sapiente modi corporis rem dolore eligendi repellendus. Provident mollitia suscipit quo? Delectus labore necessitatibus voluptate?</p>
+                </div>
+              </div>
+              <div class="swiper-button-next right-0 text-white"></div>
+              <div class="swiper-button-prev left-0 text-white"></div>
+              <div class="swiper-pagination text-white"></div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section>
+      <div id="contact">
+      <h2 class="text-4xl font-bold text-white text-center mt-10 mb-10">Contact <span class="text-[#3076d3]">Me</span></h2>
+          <div class="contactForm lg:flex lg:flex-nowrap items-center justify-center mt-24 mb-24">
+            
+                <div class="w-[350px] h-[360px] bg-[#3076d3] text-white ml-10 mr-10 lg:p-5 shadow-2xl p-10 mb-10 lg:mb-0">
+                    <h2 class="text-3xl font-bold text-center mb-5 mt-5">Contact Info</h2>
+                  <div>
+                    <ul>
+                      <li>
+                          <span class="text-2xl lg:mr-3 mt-12"><i class="fa-solid fa-location-crosshairs"></i></span>
+                          <span>Kuwait City, Kuwait</span>
+                      </li>
+                      <li>
+                          <span class="text-2xl lg:mr-3 mt-12"><i class="fa-solid fa-square-phone"></i></span>
+                          <span>+965 50 19 48 36</span>
+                      </li>
+                      <li>
+                          <span class="text-2xl lg:mr-3 mt-12"><i class="fa-solid fa-square-envelope"></i></span>
+                          <span>suhelranazx@gmail.com</span>
+                      </li>
+                      <li>
+                          <span class="text-2xl lg:mr-3 mt-12"><i class="fa-brands fa-square-github"></i></span>
+                          <span>https://github.com/codewithsuhel</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class=" sci flex text-2xl mb-5 mt-5 lg:mb-8 lg:mt-8">
+                      <li><a class="mr-4" href="https://www.facebook.com/codewithsuhel.CWS"><i class="fa-brands fa-square-facebook"></i></a></li>
+                      <li><a class="mr-4" href="https://www.linkedin.com/in/codewithsuhel/"><i class="fa-brands fa-linkedin"></i></a></li>
+                      <li><a class="mr-4" href="https://www.youtube.com/@codewithsuhel/videos"><i class="fa-brands fa-youtube"></i></a></li>
+                      <li><a class="mr-4" href=""><i class="fa-brands fa-square-reddit"></i></a></li>
+                   </ul>
+                  </div>
+                </div>
+            
+              <div class="w-[650px] h-[560px] bg-slate-800 text-white ml-5 lg:ml-10 mr-10 lg:p-5 shadow-2xl p-10">
+                <h2 class="text-white text-3xl lg:text-3xl font-bold">Send Me Massage</h2>
+                <div class="ml-10">
+                    <div>
+                      <h2 class="text-xl text-white mt-5 mb-1">Your Name</h2>
+                      <input class="p-3 w-[67%] text-sm" type="text" placeholder="your name" > <br>
+                    </div>
+                    <div>
+                      <h2 class="text-xl text-white mt-5 mb-1">Your Email</h2>
+                      <input class="p-3 w-[67%] text-sm"  type="email" placeholder="your email" >
+                    </div>
+                    <div>
+                      <h2 class="text-xl text-white mt-5 mb-1">Phone Number</h2>
+                      <input class="p-3 w-[67%] text-sm"  type="text" placeholder=" phone number">
+                    </div>
+                    <div>
+                      <h2 class="text-xl text-white mt-5 mb-1">Write Your Massage</h2>
+                      <textarea class="p-3 w-[67%] lg:w-[88%] text-sm" name="" placeholder=" Write Your Massage"></textarea>
+                    </div>
+                </div>
+                <div class="ml-10">
+                  <button class="px-3 py-2 lg:px-5 lg:py-3 text-slate-800  bg-white font-semibold text-sm lg:text-[16px] mt-5 hover:bg-[#3076d3] hover:text-white" type="submit" value="Send"> Send</button>
+              </div>
+                
+            </div> 
+            </div>
+          </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    <footer class="flex justify-between items-center flex-wrap p-7 text-white bg-slate-700">
+        <div>
+          <p class="text-md">Copyright and &copy; 2023 by Code With Suhel | All Rights Reserved</p>
+        </div>
+        <div>
+          <a class="inline-flex justify-center items-center mt-5 lg:mt-0 px-3 py-2 text-slate-800 rounded hover:bg-[#3076d3] hover:text-white bg-white" href="#"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+        </div>
+    </footer>
+
+    <!-- ScrollReveal JS -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- script -->
+  <script src="./script.js"></script>  
+
+
+    <script>
+        function Menu(e){
+          let list = document.querySelector('ul');
+          e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu", list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+        }
+      </script>
+
+      
+
+    
+</body>
+</html>
